@@ -1,26 +1,26 @@
-import React, { useState } from 'react';
+import React from 'react';
+import { useTranslation } from 'react-i18next';
 
 interface LanguageSwitchProps {
-  // onLanguageChange: (language: string) => void;
+  onLanguageChange: (language: string) => void;
 }
 
-const LanguageSwitch: React.FC<LanguageSwitchProps> = ({  }) => {
-  const [language, setLanguage] = useState('en');
+const LanguageSwitch: React.FC<LanguageSwitchProps> = ({ onLanguageChange }) => {
+  const { i18n } = useTranslation();
 
   const handleChange = (event: React.ChangeEvent<HTMLSelectElement>) => {
     const selectedLanguage = event.target.value;
-    setLanguage(selectedLanguage);
-    // onLanguageChange(selectedLanguage);
+    i18n.changeLanguage(selectedLanguage);
+    onLanguageChange(selectedLanguage);
+    localStorage.setItem('language', selectedLanguage);
   };
 
   return (
     <div>
       <label htmlFor="language-switch">Choose Language: </label>
-      <select id="language-switch" value={language} onChange={handleChange}>
+      <select id="language-switch" value={i18n.language} onChange={handleChange}>
         <option value="en">English</option>
         <option value="pt">Português</option>
-        <option value="es">Español</option>
-        <option value="fr">Français</option>
       </select>
     </div>
   );
