@@ -1,4 +1,4 @@
-[{
+const languages = {
   en: {
     title: "",
     whoami: "",
@@ -11,4 +11,4 @@
     skills: "",
     projects: ""
   },
-}]
+}

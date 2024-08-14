@@ -1,6 +1,6 @@
 ---
 import HeaderLink from './HeaderLink.astro';
-import { SITE_TITLE } from '../consts';
+import LanguageSwitch from '../components/react/LanguageSwitch'
 ---
 
 <header>
@@ -10,6 +10,7 @@ import { SITE_TITLE } from '../consts';
 			<HeaderLink href="/blog">Blog</HeaderLink>
 			<HeaderLink href="/about">About</HeaderLink>
 		</div>
+		<LanguageSwitch />
 	</nav>
 </header>
 <style>
