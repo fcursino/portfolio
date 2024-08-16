@@ -10,6 +10,9 @@ export default {
 				light: ''
 			}
 		},
+		fontFamily: {
+			'sans': ['Montserrat', 'ui-sans-serif', 'system-ui']
+		}
 	},
 	plugins: [],
 }
