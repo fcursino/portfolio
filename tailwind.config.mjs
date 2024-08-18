@@ -6,8 +6,8 @@ export default {
 			colors: {
 				primary: '',
 				secondary: '',
-				dark: '',
-				light: ''
+				dark: '#042f2e',
+				light: '#f0fdfa'
 			}
 		},
 		fontFamily: {

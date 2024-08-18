@@ -1,9 +1,12 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import 'bootstrap-icons/font/bootstrap-icons.css';
+import Header from '../components/Header.astro';
 ---
 
 <Layout title="Fabricio - Portfolio">
 	<main>
+		<Header />
 		
 	</main>
 </Layout>
@@ -11,7 +14,6 @@ import Layout from '../layouts/Layout.astro';
 <style>
 	main {
 		margin: auto;
-		padding: 1rem;
 		width: 800px;
 		max-width: calc(100% - 2rem);
 		color: white;
