@@ -4,14 +4,14 @@ export default {
 	theme: {
 		extend: {
 			colors: {
-				primary: '',
-				secondary: '',
-				dark: '#042f2e',
-				light: '#f0fdfa'
+				primary: '#042f2e',
+				secondary: '#fafafa',
+				dark: '#0f172a',
+				light: '#ecfeff'
 			}
 		},
 		fontFamily: {
-			'sans': ['Montserrat', 'ui-sans-serif', 'system-ui']
+			'sans': ['Noto', 'ui-sans-serif', 'system-ui']
 		}
 	},
 	plugins: [],

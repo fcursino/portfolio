@@ -1,4 +1,5 @@
 ---
+import ThemeToggle from "./ThemeToggle.astro"
 ---
 
 <header class="container-header">
@@ -6,6 +7,7 @@
     <i class="bi bi-file-person-fill text-dark dark:text-light"></i>
     Fabricio's Portfolio
   </div>
+	<ThemeToggle />
   <button title="Settings">
     <i class="bi bi-gear-fill text-dark dark:text-light"></i>
   </button>
@@ -32,12 +34,5 @@
 	p {
 		margin-top: 0.5rem;
 		margin-bottom: 0;
-	}
-	.container-header:is(:hover, :focus-within) {
-		background-position: 0;
-		background-image: var(--accent-gradient);
-	}
-	.container-header:is(:hover, :focus-within) h2 {
-		color: rgb(var(--accent-light));
 	}
 </style>
