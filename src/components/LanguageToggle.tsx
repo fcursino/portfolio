@@ -1,20 +1,7 @@
-import { useEffect } from 'react';
-import useToggle from '../hooks/useToggle';
+import { useLanguage } from '../contexts/LanguageContext';
 
-interface LanguageToggleProps {
-  setLanguage: (language: 'en' | 'pt') => void;
-}
-
-const LanguageToggle: React.FC<LanguageToggleProps> = ({ setLanguage }) => {
-  const [language, toggleLanguage] = useToggle<'en' | 'pt'>({
-    key: 'language',
-    defaultValue: 'en',
-    options: ['en', 'pt'],
-  });
-
-  useEffect(() => {
-    setLanguage(language);
-  }, [language, setLanguage]);
+const LanguageToggle: React.FC = () => {
+  const { language, toggleLanguage } = useLanguage();
 
   return (
     <button
