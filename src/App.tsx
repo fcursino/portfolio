@@ -14,7 +14,7 @@ function Content() {
   };
 
   return (
-    <div className="h-screen w-screen flex-col items-center  bg-white dark:bg-gray-900 text-gray-900 dark:text-white">
+    <div className="h-screen w-screen flex-col items-center  bg-secondary-light dark:bg-secondary-dark text-accent-dark dark:text-accent-light">
       <div className="flex gap-4 mb-8">
         <Header />
       </div>
