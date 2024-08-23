@@ -1,5 +1,3 @@
-import ThemeToggle from './components/ThemeToggle';
-import LanguageToggle from './components/LanguageToggle';
 import { LanguageProvider, useLanguage } from './contexts/LanguageContext';
 import Header from './components/Header';
 
