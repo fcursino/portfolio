@@ -1,5 +1,6 @@
 import { LanguageProvider, useLanguage } from './contexts/LanguageContext';
 import Header from './components/Header';
+import Card from './components/Card';
 
 function Content() {
   const { language } = useLanguage();
@@ -18,6 +19,11 @@ function Content() {
       <div className="flex gap-4 mb-8">
         <Header />
       </div>
+      <div className="flex justify-between">
+      <Card />
+      <Card />
+      </div>
+      
       <h1 className="text-3xl font-bold">
         {text[language].welcome}
       </h1>
