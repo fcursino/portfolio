@@ -6,9 +6,14 @@ const LanguageToggle: React.FC = () => {
   return (
     <button
       onClick={toggleLanguage}
-      className="p-2 rounded-full  bg-primary-light dark:bg-primary-dark text-accent-dark dark:text-accent-light"
+      className="p-2 rounded-full bg-primary-light dark:bg-primary-dark text-accent-dark dark:text-accent-light"
     >
-      {language === 'en' ? '🇺🇸 English' : '🇧🇷 Português'}
+      <span className="sm:hidden">
+        {language === 'en' ? 'US' : 'BR'}
+      </span>
+      <span className="hidden sm:inline">
+        {language === 'en' ? '🇺🇸 English' : '🇧🇷 Português'}
+      </span>
     </button>
   );
 };
