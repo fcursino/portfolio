@@ -14,7 +14,7 @@ const ThemeToggle: React.FC = () => {
       className="p-2 rounded-full bg-primary-light dark:bg-primary-dark text-accent-dark dark:text-accent-light"
     >
       <span className="sm:hidden">
-        {theme === 'light' ? <DarkMode /> : <LightMode />}
+        {theme === 'light' ? <DarkMode htmlColor="#e2c706" /> : <LightMode htmlColor="#e2c706" />}
       </span>
       <span className="hidden sm:inline">
         {theme === 'light' ? 
