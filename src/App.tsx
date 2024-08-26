@@ -24,16 +24,19 @@ function Content() {
         <h1 className="text-3xl font-bold">
           {text[language].welcome}
         </h1>
+      </div>
+      <div className="flex justify-between p-10">
+      <Card>
+        <div className="flex justify-around items-center">
         <div className="w-24 h-24 md:w-32 md:h-32 lg:w-40 lg:h-40 xl:w-48 xl:h-48 rounded-full overflow-hidden bg-primary-light dark:bg-primary-dark">
           <img src={profile} alt="Perfil" className="w-full h-full object-cover" />
         </div>
+        <div>
+          <h1>aaa</h1>
+        </div>
+        </div>
+      </Card>
       </div>
-      
-      <div className="flex justify-between p-10">
-      <Card />
-      </div>
-      
-      
     </div>
   );
 }
