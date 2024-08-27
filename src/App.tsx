@@ -14,6 +14,19 @@ function Content() {
       welcome: 'Bem-vindo ao Meu Portfólio',
     },
   };
+  const findYearsPast = (): number => {
+    const currentDate = new Date();
+    const initialDate = new Date(2001, 4, 7);
+    let anos = currentDate.getFullYear() - initialDate.getFullYear();
+    
+    if (currentDate.getMonth() < initialDate.getMonth() || (currentDate.getMonth() === initialDate.getMonth() && currentDate.getDate() < initialDate.getDate())) {
+      anos--;
+    }
+    return anos;
+  }
+  let yearsPast = findYearsPast()
+
+  
 
   return (
     <div className="h-screen w-screen flex-col items-center  bg-secondary-light dark:bg-secondary-dark text-accent-dark dark:text-accent-light">
