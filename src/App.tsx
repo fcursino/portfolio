@@ -39,16 +39,16 @@ function Content() {
         </h1>
       </div>
       <div className="flex justify-center sm:justify-between p-10">
-      <Card>
-        <div className="grid-flow-col sm:flex justify-around items-center">
-          <div className="w-24 h-24 md:w-32 md:h-32 lg:w-40 lg:h-40 xl:w-48 xl:h-48 rounded-full overflow-hidden bg-primary-light dark:bg-primary-dark">
-            <img src={profile} alt="Perfil" className="w-full h-full object-cover" />
+        <Card>
+          <div className="grid sm:flex flex-col sm:flex-row justify-center sm:justify-around items-center text-center sm:text-left">
+            <div className="mb-4 sm:mb-0 w-24 h-24 md:w-32 md:h-32 lg:w-40 lg:h-40 xl:w-48 xl:h-48 rounded-full overflow-hidden bg-primary-light dark:bg-primary-dark mx-auto sm:mx-0">
+              <img src={profile} alt="Perfil" className="w-full h-full object-cover" />
+            </div>
+            <div className="w-full sm:w-1/2">
+              <p className="text-base lg:text-lg">{LANGUAGE_SWITCH[language].presentation}</p>
+            </div>
           </div>
-          <div className="w-1/2">
-            <text>Meu nome é Fabrício, tenho {yearsPast} anos. Sou desenvolvedor FullStack, e estou atuando na área desde 2020. Sou apaixonado pelo desenvolvimento de produtos que fazem a diferença na vida das pessoas.</text>
-          </div>
-        </div>
-      </Card>
+        </Card>
       </div>
     </div>
   );
