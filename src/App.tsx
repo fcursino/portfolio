@@ -29,6 +29,26 @@ function Content() {
           </div>
         </Card>
       </div>
+      <div className="grid p-10">
+        <h3 className="text-xl lg:text-2xl font-bold max-w-5xl m-auto w-full">
+          {LANGUAGE_SWITCH[language].skills_title}
+        </h3>
+        <Card>
+          <div className="grid-cols-4 sm:flex flex-col flex-wrap sm:flex-row justify-center sm:justify-around items-center text-center sm:text-left">
+            <img src={skills.node} className="w-12" />
+            <img src={skills.vue} className="w-12" />
+            <img src={skills.react} className="w-12" />
+            <img src={skills.javascript} className="w-12" />
+            <img src={skills.html} className="w-12" />
+            <img src={skills.css} className="w-12" />
+            <img src={skills.php} className="w-12" />
+            <img src={skills.python} className="w-12" />
+            <img src={skills.mysql} className="w-12" />
+            <img src={skills.git} className="w-12" />
+            <img src={skills.github} className="w-12" />
+          </div>
+        </Card>
+      </div>
     </div>
   );
 }
