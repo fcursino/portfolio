@@ -3,6 +3,7 @@ import Header from './components/Header';
 import Card from './components/Card';
 import profile from './assets/profile.png'
 import { LANGUAGE_SWITCH } from './config/languageConfig'
+import skills from './config/iconConfig'
 
 function Content() {
   const { language } = useLanguage();
@@ -17,7 +18,10 @@ function Content() {
           {LANGUAGE_SWITCH[language].welcome}
         </h1>
       </div>
-      <div className="flex justify-center sm:justify-between p-10">
+      <div className="grid p-10">
+        <h3 className="text-xl lg:text-2xl font-bold max-w-5xl m-auto w-full">
+          {LANGUAGE_SWITCH[language].presentation_title}
+        </h3>
         <Card>
           <div className="grid sm:flex flex-col sm:flex-row justify-center sm:justify-around items-center text-center sm:text-left">
             <div className="mb-4 sm:mb-0 w-24 h-24 md:w-32 md:h-32 lg:w-40 lg:h-40 xl:w-48 xl:h-48 rounded-full overflow-hidden bg-primary-light dark:bg-primary-dark mx-auto sm:mx-0">
