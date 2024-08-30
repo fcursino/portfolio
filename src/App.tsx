@@ -9,7 +9,7 @@ function Content() {
   const { language } = useLanguage();
 
   return (
-    <div className="h-screen w-screen flex-col items-center  bg-secondary-light dark:bg-secondary-dark text-accent-dark dark:text-accent-light">
+    <div className="h-fit sm:h-screen w-screen flex-col items-center  bg-secondary-light dark:bg-secondary-dark text-accent-dark dark:text-accent-light">
       <div className="flex gap-4 mb-8">
         <Header />
       </div>
