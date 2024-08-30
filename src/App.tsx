@@ -38,18 +38,55 @@ function Content() {
           {LANGUAGE_SWITCH[language].skills_title}
         </h3>
         <Card>
-          <div className="grid-cols-4 sm:flex flex-col flex-wrap sm:flex-row justify-center sm:justify-around items-center text-center sm:text-left">
-            <img src={skills.node} className="w-12" />
-            <img src={skills.vue} className="w-12" />
-            <img src={skills.react} className="w-12" />
-            <img src={skills.javascript} className="w-12" />
-            <img src={skills.html} className="w-12" />
-            <img src={skills.css} className="w-12" />
-            <img src={skills.php} className="w-12" />
-            <img src={skills.python} className="w-12" />
-            <img src={skills.mysql} className="w-12" />
-            <img src={skills.git} className="w-12" />
-            <img src={skills.github} className="w-12" />
+          <div className="grid grid-cols-2 sm:grid-cols-4 md:grid-cols-8 gap-4 justify-center items-center text-center sm:text-left">
+            <div className="flex flex-col justify-center text-center">
+              <img src={skills.node} className="w-12 m-auto" />
+              <text>NodeJS</text>
+            </div>
+            <div className="flex flex-col justify-center text-center">
+              <img src={skills.vue} className="w-12 m-auto" />
+              <text>Vue</text>
+            </div>
+            <div className="flex flex-col justify-center text-center">
+              <img src={skills.react} className="w-12 m-auto" />
+              <text>React</text>
+            </div>
+            <div className="flex flex-col justify-center text-center">
+              <img src={skills.javascript} className="w-12 m-auto" />
+              <text>Javascript</text>
+            </div>
+            <div className="flex flex-col justify-center text-center">
+              <img src={skills.html} className="w-12 m-auto" />
+              <text>HTML</text>
+            </div>
+            <div className="flex flex-col justify-center text-center">
+              <img src={skills.css} className="w-12 m-auto" />
+              <text>CSS</text>
+            </div>
+            <div className="flex flex-col justify-center text-center">
+              <img src={skills.php} className="w-12 m-auto" />
+              <text>PHP</text>
+            </div>
+            <div className="flex flex-col justify-center text-center">
+              <img src={skills.python} className="w-12 m-auto" />
+              <text>Python</text>
+            </div>
+            <div className="flex flex-col justify-center text-center">
+              <img src={skills.mysql} className="w-12 m-auto" />
+              <text>MySQL</text>
+            </div>
+            <div className="flex flex-col justify-center text-center">
+              <img src={skills.docker} className="w-12 m-auto" />
+              <text>Docker</text>
+            </div>
+            <div className="flex flex-col justify-center text-center">
+              <img src={skills.git} className="w-12 m-auto" />
+              <text>Git</text>
+            </div>
+            <div className="flex flex-col justify-center text-center">
+              <img src={skills.github} className="w-12 m-auto" />
+              <text>Github</text>
+            </div>
           </div>
         </Card>
       </div>
