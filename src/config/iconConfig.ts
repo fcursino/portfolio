@@ -9,5 +9,6 @@ import php from '../assets/icons/php.svg'
 import python from '../assets/icons/python.svg'
 import react from '../assets/icons/react.svg'
 import vue from '../assets/icons/vue.svg'
+import docker from '../assets/icons/docker.svg'
 
-export default { css, git, github, html, javascript, mysql, node, php, python, react, vue }
+export default { css, git, github, html, javascript, mysql, node, php, python, react, vue, docker }
