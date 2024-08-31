@@ -18,8 +18,8 @@ function Content() {
           {LANGUAGE_SWITCH[language].welcome}
         </h1>
       </div>
-      <div className="grid p-10">
-        <h3 className="text-xl lg:text-2xl font-bold max-w-5xl m-auto w-full">
+      <div className="grid m-10">
+        <h3 className="text-xl lg:text-2xl pb-4 font-bold max-w-5xl m-auto w-full">
           {LANGUAGE_SWITCH[language].presentation_title}
         </h3>
         <Card>
@@ -33,8 +33,8 @@ function Content() {
           </div>
         </Card>
       </div>
-      <div className="grid p-10">
-        <h3 className="text-xl lg:text-2xl font-bold max-w-5xl m-auto w-full">
+      <div className="grid m-10">
+        <h3 className="text-xl lg:text-2xl pb-4 font-bold max-w-5xl m-auto w-full">
           {LANGUAGE_SWITCH[language].skills_title}
         </h3>
         <Card>
