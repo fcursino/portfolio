@@ -90,6 +90,14 @@ function Content() {
           </div>
         </Card>
       </div>
+      <div className="grid m-10">
+        <h3 className="text-xl lg:text-2xl pb-4 font-bold max-w-5xl m-auto w-full">
+          {LANGUAGE_SWITCH[language].projects_title}
+        </h3>
+        <Card>
+
+        </Card>
+      </div>
     </div>
   );
 }
