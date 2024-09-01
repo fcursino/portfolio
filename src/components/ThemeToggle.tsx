@@ -1,3 +1,4 @@
+import { useLayoutEffect } from 'react';
 import useToggle from '../hooks/useToggle';
 import { LightMode, DarkMode } from '@mui/icons-material';
 
@@ -7,6 +8,16 @@ const ThemeToggle: React.FC = () => {
     defaultValue: 'light',
     options: ['light', 'dark'],
   });
+
+  useLayoutEffect(() => {
+    const root = document.documentElement;
+
+    if (theme === 'dark') {
+      root.style.backgroundColor = 'rgb(9 13 33)';
+    } else {
+      root.style.backgroundColor = 'rgb(232 242 253)';
+    }
+  }, [theme]);
 
   return (
     <button
