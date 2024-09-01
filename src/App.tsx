@@ -4,6 +4,7 @@ import Card from './components/Card';
 import profile from './assets/profile.png'
 import { LANGUAGE_SWITCH } from './config/languageConfig'
 import skills from './config/iconConfig'
+import projectLogo from './assets/images/project.png'
 
 function Content() {
   const { language } = useLanguage();
@@ -95,7 +96,20 @@ function Content() {
           {LANGUAGE_SWITCH[language].projects_title}
         </h3>
         <Card>
-
+          {LANGUAGE_SWITCH[language].projects.map((project, index) => (
+            <div>
+              {index !== 0 ? <hr className="border-accent-dark dark:border-accent-light" /> : null}
+              <div className="grid sm:flex flex-col sm:flex-row justify-center sm:justify-around items-center text-center sm:text-left">
+                <div className="mb-4 sm:mb-0 w-8 h-8 md:w-16 md:h-16 lg:w-24 lg:h-24 xl:w-32 xl:h-32 rounded-full overflow-hidden bg-primary-light dark:bg-primary-dark mx-auto sm:mx-0">
+                  <img src={projectLogo} alt="Project" className="w-full h-full object-cover" />
+                </div>
+                <div className="w-full sm:w-1/2">
+                  <p className="p-4 text-base lg:text-lg">{project.project_description}</p>
+                </div>
+              </div>
+            </div>
+            
+          ))}
         </Card>
       </div>
     </div>
