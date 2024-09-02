@@ -103,8 +103,9 @@ function Content() {
                 <div className="mb-4 sm:mb-0 w-8 h-8 md:w-16 md:h-16 lg:w-24 lg:h-24 xl:w-32 xl:h-32 rounded-full overflow-hidden bg-primary-light dark:bg-primary-dark mx-auto sm:mx-0">
                   <img src={projectLogo} alt="Project" className="w-full h-full object-cover" />
                 </div>
-                <div className="w-full sm:w-1/2">
-                  <p className="p-4 text-base lg:text-lg">{project.project_description}</p>
+                <div className="p-4 w-full sm:w-1/2">
+                  <p className="py-2"><b>{project.project_title}</b></p>
+                  <p className="text-base lg:text-lg">{project.project_description}</p>
                 </div>
               </div>
             </div>
