@@ -41,20 +41,12 @@ export const LANGUAGE_SWITCH: LanguageSwitch = {
     projects_title: "Projects",
     projects: [
       {
-        project_title: "Projeto A",
-        project_description: "A prática cotidiana prova que o julgamento imparcial das eventualidades causa impacto indireto na reavaliação do retorno esperado a longo prazo. Não obstante, a complexidade dos estudos efetuados afeta positivamente a correta previsão das diretrizes de desenvolvimento para o futuro. No mundo atual, a contínua expansão de nossa atividade faz parte de um processo de gerenciamento do processo de comunicação como um todo. Pensando mais a longo prazo, o surgimento do comércio virtual auxilia a preparação e a composição do fluxo de informações."
+        project_title: "Cholesterol Forecast",
+        project_description: "AI model that informs the probable cholesterol level of a patient, based on information such as weight, height, age and smoking habits, present in the dataset provided."
       },
       {
-        project_title: "Projeto A",
-        project_description: "A prática cotidiana prova que o julgamento imparcial das eventualidades causa impacto indireto na reavaliação do retorno esperado a longo prazo. Não obstante, a complexidade dos estudos efetuados afeta positivamente a correta previsão das diretrizes de desenvolvimento para o futuro. No mundo atual, a contínua expansão de nossa atividade faz parte de um processo de gerenciamento do processo de comunicação como um todo. Pensando mais a longo prazo, o surgimento do comércio virtual auxilia a preparação e a composição do fluxo de informações."
-      },
-      {
-        project_title: "Projeto A",
-        project_description: "A prática cotidiana prova que o julgamento imparcial das eventualidades causa impacto indireto na reavaliação do retorno esperado a longo prazo. Não obstante, a complexidade dos estudos efetuados afeta positivamente a correta previsão das diretrizes de desenvolvimento para o futuro. No mundo atual, a contínua expansão de nossa atividade faz parte de um processo de gerenciamento do processo de comunicação como um todo. Pensando mais a longo prazo, o surgimento do comércio virtual auxilia a preparação e a composição do fluxo de informações."
-      },
-      {
-        project_title: "Projeto A",
-        project_description: "A prática cotidiana prova que o julgamento imparcial das eventualidades causa impacto indireto na reavaliação do retorno esperado a longo prazo. Não obstante, a complexidade dos estudos efetuados afeta positivamente a correta previsão das diretrizes de desenvolvimento para o futuro. No mundo atual, a contínua expansão de nossa atividade faz parte de um processo de gerenciamento do processo de comunicação como um todo. Pensando mais a longo prazo, o surgimento do comércio virtual auxilia a preparação e a composição do fluxo de informações."
+        project_title: "MS Math",
+        project_description: "API that performs mathematical calculations of algebra (first-degree equation) and geometry (area) from the data received, made available on two different virtual machines."
       }
     ]
   },
@@ -66,20 +58,12 @@ export const LANGUAGE_SWITCH: LanguageSwitch = {
     projects_title: "Projetos",
     projects: [
       {
-        project_title: "Projeto A",
-        project_description: "A prática cotidiana prova que o julgamento imparcial das eventualidades causa impacto indireto na reavaliação do retorno esperado a longo prazo. Não obstante, a complexidade dos estudos efetuados afeta positivamente a correta previsão das diretrizes de desenvolvimento para o futuro. No mundo atual, a contínua expansão de nossa atividade faz parte de um processo de gerenciamento do processo de comunicação como um todo. Pensando mais a longo prazo, o surgimento do comércio virtual auxilia a preparação e a composição do fluxo de informações."
+        project_title: "Cholesterol Forecast",
+        project_description: "Modelo de IA que informa o nível provável de colesterol de um paciente, com base em informações como peso, altura, idade e hábitos de fumo, presentes no conjunto de dados fornecido."
       },
       {
-        project_title: "Projeto A",
-        project_description: "A prática cotidiana prova que o julgamento imparcial das eventualidades causa impacto indireto na reavaliação do retorno esperado a longo prazo. Não obstante, a complexidade dos estudos efetuados afeta positivamente a correta previsão das diretrizes de desenvolvimento para o futuro. No mundo atual, a contínua expansão de nossa atividade faz parte de um processo de gerenciamento do processo de comunicação como um todo. Pensando mais a longo prazo, o surgimento do comércio virtual auxilia a preparação e a composição do fluxo de informações."
-      },
-      {
-        project_title: "Projeto A",
-        project_description: "A prática cotidiana prova que o julgamento imparcial das eventualidades causa impacto indireto na reavaliação do retorno esperado a longo prazo. Não obstante, a complexidade dos estudos efetuados afeta positivamente a correta previsão das diretrizes de desenvolvimento para o futuro. No mundo atual, a contínua expansão de nossa atividade faz parte de um processo de gerenciamento do processo de comunicação como um todo. Pensando mais a longo prazo, o surgimento do comércio virtual auxilia a preparação e a composição do fluxo de informações."
-      },
-      {
-        project_title: "Projeto A",
-        project_description: "A prática cotidiana prova que o julgamento imparcial das eventualidades causa impacto indireto na reavaliação do retorno esperado a longo prazo. Não obstante, a complexidade dos estudos efetuados afeta positivamente a correta previsão das diretrizes de desenvolvimento para o futuro. No mundo atual, a contínua expansão de nossa atividade faz parte de um processo de gerenciamento do processo de comunicação como um todo. Pensando mais a longo prazo, o surgimento do comércio virtual auxilia a preparação e a composição do fluxo de informações."
+        project_title: "MS Math",
+        project_description: "API que realiza cálculos matemáticos de álgebra(equação de primeiro grau) e geometria(área) a partir dos dados recebidos, disponibilizada em duas máquinas virtuais diferentes."
       }
     ]
   },
