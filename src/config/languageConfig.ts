@@ -12,9 +12,12 @@ interface LanguageSwitch {
   pt: LanguageTexts;
 }
 
+type Technology = 'vue' | 'react' | 'javascript' | 'node' | 'python' | 'docker' | 'git' | 'github' | 'php' | 'mysql' | 'html' | 'css';
+
 type Project = {
   project_title: string;
   project_description: string;
+  project_technologies: Technology[];
 }
 
 function findYearsPast(): number {
@@ -42,10 +45,12 @@ export const LANGUAGE_SWITCH: LanguageSwitch = {
     projects: [
       {
         project_title: "Cholesterol Forecast",
+        project_technologies: ['python', 'git', 'github'],
         project_description: "AI model that informs the probable cholesterol level of a patient, based on information such as weight, height, age and smoking habits, present in the dataset provided."
       },
       {
         project_title: "MS Math",
+        project_technologies: ['node', 'javascript', 'docker', 'git', 'github'],
         project_description: "API that performs mathematical calculations of algebra (first-degree equation) and geometry (area) from the data received, made available on two different virtual machines."
       }
     ]
@@ -59,10 +64,12 @@ export const LANGUAGE_SWITCH: LanguageSwitch = {
     projects: [
       {
         project_title: "Cholesterol Forecast",
+        project_technologies: ['python', 'git', 'github'],
         project_description: "Modelo de IA que informa o nível provável de colesterol de um paciente, com base em informações como peso, altura, idade e hábitos de fumo, presentes no conjunto de dados fornecido."
       },
       {
         project_title: "MS Math",
+        project_technologies: ['node', 'javascript', 'docker', 'git', 'github'],
         project_description: "API que realiza cálculos matemáticos de álgebra(equação de primeiro grau) e geometria(área) a partir dos dados recebidos, disponibilizada em duas máquinas virtuais diferentes."
       }
     ]
