@@ -106,6 +106,11 @@ function Content() {
                 <div className="p-4 w-full sm:w-1/2">
                   <p className="py-2"><b>{project.project_title}</b></p>
                   <p className="text-base lg:text-lg">{project.project_description}</p>
+                  <div className="py-6 grid grid-cols-4 sm:grid-cols-6 md:grid-cols-8 gap-4 justify-center items-center">
+                    {project.project_technologies.map((tech) => (
+                      <img src={skills[tech]} className="w-10" />
+                    ))}
+                  </div>
                 </div>
               </div>
             </div>
