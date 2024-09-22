@@ -5,6 +5,7 @@ import profile from './assets/profile.png'
 import { LANGUAGE_SWITCH } from './config/languageConfig'
 import skills from './config/iconConfig'
 import projectLogo from './assets/images/project.png'
+import { GitHub, LinkedIn } from '@mui/icons-material';
 
 function Content() {
   const { language } = useLanguage();
@@ -30,6 +31,10 @@ function Content() {
             </div>
             <div className="w-full sm:w-1/2">
               <p className="text-base lg:text-lg">{LANGUAGE_SWITCH[language].presentation}</p>
+              <div className="flex gap-4 mt-2 justify-center md:justify-start">
+                <a href=""><LinkedIn titleAccess='Linkedin' fontSize='large' /></a>
+                <a href=""><GitHub titleAccess='Github' fontSize='large' /></a>
+              </div>
             </div>
           </div>
         </Card>
@@ -110,6 +115,10 @@ function Content() {
                     {project.project_technologies.map((tech) => (
                       <img src={skills[tech]} className="w-10" />
                     ))}
+                  </div>
+                  <div className="flex flex-col gap-4">
+                    <a href={project.project_access} target="_blank" className="text-accent-dark dark:text-accent-light text-base lg:text-lg cursor-pointer bg-primary-light dark:bg-primary-dark ">{language === 'pt' ? 'Interface do projeto' : "Project's interface"}</a>
+                    <a href={project.project_repository} target="_blank" className="text-accent-dark dark:text-accent-light text-base lg:text-lg cursor-pointer bg-primary-light dark:bg-primary-dark ">{language === 'pt' ? 'Código do projeto' : "Project's code"}</a>
                   </div>
                 </div>
               </div>
